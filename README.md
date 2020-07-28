@@ -14,7 +14,7 @@ Rules:
 ```
 
 ## Scrapers
-To scrape the data from data sources like [Wikipedia] (https://en.wikipedia.org/wiki/Sports_in_Dallas])
+To scrape the data from data sources like [Wikipedia] (https://en.wikipedia.org/wiki/Sports_in_Dallas)
 
 ## Visualizations
 Add some visualtions here
