@@ -1,4 +1,4 @@
-### Sports team names data set
+# Sports Teams Dataset
 An attempt to capture all the sports team names and their cities and locations. Will be interesting to find unique names while selecting new team names.
 
 
@@ -13,7 +13,10 @@ Rules:
 
 ```
 
-## Visualtions
+## Scrapers
+To scrape the data from data sources like [Wikipedia] (https://en.wikipedia.org/wiki/Sports_in_Dallas])
+
+## Visualizations
 Add some visualtions here
 
 ## Graph DB
