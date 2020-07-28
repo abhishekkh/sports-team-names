@@ -30,7 +30,7 @@ if __name__ == '__main__':
     print(teams)
 
     # Write to CSV file
-    with open("data/nba-teams.csv", 'w') as out_file:
+    with open("data/mlb-teams.csv", 'w') as out_file:
         out_writer = csv.writer(out_file, delimiter=',')
         for team in teams:
             data = team.rsplit(' ', 1)
