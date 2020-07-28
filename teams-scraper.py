@@ -2,6 +2,13 @@ import requests
 from bs4 import BeautifulSoup
 import csv
 
+"""
+Scrape the wiki page to write csv files with teams names for all leagues we are interested in
+Final step would be to combine all the csv files into the teams.csv
+
+TODO: Loop through all the tables and filter the tables we are interested in
+
+"""
 
 if __name__ == '__main__':
     SCRAPE_URL = 'https://en.wikipedia.org/wiki/List_of_professional_sports_teams_in_the_United_States_and_Canada'
