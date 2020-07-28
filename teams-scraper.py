@@ -1,5 +1,6 @@
 import requests
 from bs4 import BeautifulSoup
+import csv
 
 
 if __name__ == '__main__':
@@ -25,5 +26,14 @@ if __name__ == '__main__':
         for td in tr.find_all("td"):
             table_row.append(td.text.replace('\n', '').strip())
         if len(table_row) > 0:
-            teams.append(table_row)
+            teams.append(table_row[0])
     print(teams)
+
+    # Write to CSV file
+    with open("data/nba-teams.csv", 'w') as out_file:
+        out_writer = csv.writer(out_file, delimiter=',')
+        for team in teams:
+            data = team.rsplit(' ', 1)
+            out_writer.writerow([data[0].lower(), data[1].lower(), 'baseball', 'm', 'mlb'])
+
+
